@@ -212,3 +212,12 @@ footer {
 .fixed-header .logo,.fixed-header .nav-links a {
     color: #000
 }
+footer a {
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    transition: color 0.3s ease; /* Плавный переход при наведении */
+}
+
+footer a:hover {
+    color: #dddddd; /* Светло-серый при наведении (опционально) */
+}
