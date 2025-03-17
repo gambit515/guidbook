@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список записей</title>
+    <link rel="stylesheet" href="list.css">
+</head>
+
+<body>
+    <!--Фиксированная шапка -->
+
+    <header class="fixed-header">
+        <div class="logo">Knowledge Base</div>
+        <nav class="nav-links">
+            <a href="#">Категории</a>
+            <a href="#">Теги</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <h1>Название категории</h1>
+            <p>Описание категории, дороги в Эквадоре практически идеальные, хотя населенные пункты выглядят очень бедно. На дорогах много интересных машин, например очень много грузовиков - древних Фордов, которые я никогда раньше не видел. А еще несколько раз на глаза попадались старенькие Жигули :) А еще если кого-то обгоняешь и есть встречная машина, она обязательно включает фары. На больших машинах - грузовиках и автобусах, обязательно красуется местный тюнинг: машины разукрашенные, либо в наклейках, и обязательно везде огромное множество светодиодов, как будто новогодние елки едут и переливаются всеми цветами.</p>
+        </section>
+        <section class="records-list">
+            <!-- Запись 1 -->
+            <div class="record-card">
+                <h2><a href="#">Запись 1: Введение в программирование</a></h2>
+                <p>Это краткое описание записи.</p>
+                <div class="record-meta">
+                    <span class="date">Дата: 01.01.2023</span>
+                    <div class="tags-container">
+                        <span class="tags">
+                            <a href="#" class="tag">Программирование</a>
+                            <a href="#" class="tag">Python</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Запись 2 -->
+            <div class="record-card">
+                <h2><a href="#">Запись 2: Основы веб-разработки</a></h2>
+                <p>Расширение коммерческое. Лицензия для одного сайта стоит в пределах двух тысяч рублей. При приобретении большего количества доменов предусмотрены скидки. Ключ покупается только раз. Хороший способ сэкономить – промокод (буквенно-цифровая комбинация), который позволяет воспользоваться скидкой.</p>
+                <div class="record-meta">
+                    <span class="date">Дата: 05.01.2023</span>
+                    <div class="tags-container">
+                        <span class="tags">
+                            <a href="#" class="tag">HTML</a>
+                            <a href="#" class="tag">CSS</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Запись 3 -->
+            <div class="record-card">
+                <h2><a href="#">Запись 3: Работа с базами данных</a></h2>
+                <p>Изучите основы работы с базами данных, включая SQL и NoSQL решения.</p>
+                <div class="record-meta">
+                    <span class="date">Дата: 10.01.2023</span>
+                    <div class="tags-container">
+                        <span class="tags">
+                            <a href="#" class="tag">Базы данных</a>
+                            <a href="#" class="tag">SQL</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="record-card video-record">
+                <h2><a href="#">Заголовок записи с фотографией</a></h2>
+                <img src="https://i.pinimg.com/736x/0f/b8/0d/0fb80d36770a661f42d082220e6fcc2d.jpg" alt="Пример фото">
+                <p>Это пример записи с фотографией.</p>
+                <span class="date">Дата: 10.01.2023</span>
+                    <div class="tags-container">
+                        <span class="tags">
+                            <a href="#" class="tag">Базы данных</a>
+                            <a href="#" class="tag">SQL</a>
+                        </span>
+                    </div>
+            </div>
+    
+            <!-- Запись с видео -->
+            <div class="record-card video-record">
+                <h2><a href="#">Запись с видео</a></h2>
+                
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+                <p>Это пример записи с видео:</p>
+                <span class="date">Дата: 10.01.2023</span>
+                    <div class="tags-container">
+                        <span class="tags">
+                            <a href="#" class="tag">Базы данных</a>
+                            <a href="#" class="tag">SQL</a>
+                        </span>
+                    </div>
+            </div>
+        </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Функция для генерации случайного насыщенного цвета в формате HSL
+                function getRandomVibrantColor() {
+                    const hue = Math.floor(Math.random() * 360); // Случайный оттенок
+                    const saturation = Math.floor(Math.random() * 30) + 70; // Насыщенность от 70% до 100%
+                    const lightness = Math.floor(Math.random() * 20) + 60; // Яркость от 60% до 80%
+                    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+                }
+
+                // Получаем все элементы с классом "tag"
+                const tags = document.querySelectorAll('.tag');
+
+                // Добавляем обработчики событий для каждого тега
+                tags.forEach(tag => {
+                    tag.addEventListener('mouseenter', () => {
+                        tag.style.backgroundColor = getRandomVibrantColor();
+                    });
+
+                    tag.addEventListener('mouseleave', () => {
+                        tag.style.backgroundColor = ''; // Возвращаем исходный цвет
+                    });
+                });
+            });
+        </script>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <p>&copy; 2025 Гайд-бук. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
