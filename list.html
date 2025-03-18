@@ -12,17 +12,249 @@
     <!--Фиксированная шапка -->
 
     <header class="fixed-header">
-        <div class="logo">Knowledge Base</div>
-        <nav class="nav-links">
-            <a href="#">Категории</a>
-            <a href="#">Теги</a>
-        </nav>
+        <a href="#" class="logo">Гайд-бук</a>
+        <div class="nav-links">
+            <button id="menu-button" class="nav-link toggle-menu">
+                Категории <span class="arrow-icon">▼</span>
+            </button>
+            <button id="tags-button" class="nav-link toggle-menu">
+                Теги <span class="arrow-icon">▼</span>
+            </button>
+        </div>
     </header>
+    <!-- Панель категорий -->
+    <div id="categories-panel" class="categories-panel">
+        <div class="panel-content">
+            <button id="close-panel" class="close-button">&times;</button>
+            <div id="categories-anchor"></div>
+            <div class="categories-wrapper">
+                <div class="categories-grid">
+                    <!-- Основы дизайна -->
+                    <div class="category-item color-teal">
+                        <a href="/topic/design-basics">
+                            <h3>Основы дизайна <span class="item-count">12</span></h3>
+                            <p>Фундаментальные принципы визуального дизайна</p>
+                            <p class="additional-info">
+                                Раздел содержит базовые правила композиции, типографики и цветоведения.
+                                Изучите основы баланса, ритма и контраста в дизайне.
+                                Узнайте, как применять эти принципы на практике.
+                            </p>
+                        </a>
+                    </div>
 
+                    <!-- SMM -->
+                    <div class="category-item color-purple">
+                        <a href="/topic/social-media">
+                            <h3>SMM <span class="item-count">8</span></h3>
+                            <p>Стратегии и тактики продвижения</p>
+                            <p class="additional-info">
+                                Изучите методы создания контента и анализа аудитории.
+                                Узнайте, как создавать эффективные посты для социальных сетей.
+                                Научитесь анализировать метрики и улучшать результаты.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Брендинг -->
+                    <div class="category-item color-orange">
+                        <a href="/topic/branding">
+                            <h3>Брендинг <span class="item-count">5</span></h3>
+                            <p>Создание и развитие бренда</p>
+                            <p class="additional-info">
+                                Узнайте, как создавать сильные бренды и поддерживать их.
+                                Изучите стратегии позиционирования и уникального торгового предложения.
+                                Научитесь создавать узнаваемый визуальный стиль.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Контент -->
+                    <div class="category-item color-blue">
+                        <a href="/topic/content-creation">
+                            <h3>Контент <span class="item-count">15</span></h3>
+                            <p>Производство различных форматов контента</p>
+                            <p class="additional-info">
+                                Научитесь создавать тексты, видео и графику для разных платформ.
+                                Изучите техники сторителлинга и вовлечения аудитории.
+                                Узнайте, как адаптировать контент под разные каналы коммуникации.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Аналитика -->
+                    <div class="category-item color-yellow">
+                        <a href="/topic/analytics">
+                            <h3>Аналитика <span class="item-count">10</span></h3>
+                            <p>Методы анализа данных и метрик</p>
+                            <p class="additional-info">
+                                Освойте инструменты для оценки эффективности маркетинговых стратегий.
+                                Изучите ключевые метрики и KPI для разных каналов.
+                                Научитесь принимать решения на основе данных.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Видеопроизводство -->
+                    <div class="category-item color-green">
+                        <a href="/topic/video-production">
+                            <h3>Видеопроизводство <span class="item-count">7</span></h3>
+                            <p>Создание и монтаж видео контента</p>
+                            <p class="additional-info">
+                                Изучите основы съёмки, монтажа и постпродакшна.
+                                Узнайте, как создавать привлекательные ролики для YouTube, Instagram и других платформ.
+                                Научитесь работать с освещением, звуком и цветокоррекцией.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Фотография -->
+                    <div class="category-item color-pink">
+                        <a href="/topic/photography">
+                            <h3>Фотография <span class="item-count">9</span></h3>
+                            <p>Техники и методы съемки</p>
+                            <p class="additional-info">
+                                Научитесь работать с освещением, композицией и обработкой снимков.
+                                Изучите особенности предметной, портретной и пейзажной съемки.
+                                Узнайте, как создавать профессиональные фотографии для каталогов и рекламы.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Копирайтинг -->
+                    <div class="category-item color-gray">
+                        <a href="/topic/copywriting">
+                            <h3>Копирайтинг <span class="item-count">11</span></h3>
+                            <p>Написание продающих текстов</p>
+                            <p class="additional-info">
+                                Овладейте искусством создания эффективных и цепляющих текстов.
+                                Изучите техники написания заголовков, призывов к действию и описаний продуктов.
+                                Узнайте, как адаптировать тексты под разные аудитории.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Email маркетинг -->
+                    <div class="category-item color-red">
+                        <a href="/topic/email-marketing">
+                            <h3>Email маркетинг <span class="item-count">6</span></h3>
+                            <p>Стратегии email рассылок</p>
+                            <p class="additional-info">
+                                Изучите, как создавать эффективные email-кампании.
+                                Узнайте, как составлять продающие письма и автоматизировать рассылки.
+                                Научитесь анализировать открытость и конверсию писем.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Веб-дизайн -->
+                    <div class="category-item color-indigo">
+                        <a href="/topic/web-design">
+                            <h3>Веб-дизайн <span class="item-count">14</span></h3>
+                            <p>Дизайн сайтов и интерфейсов</p>
+                            <p class="additional-info">
+                                Создавайте удобные и современные веб-интерфейсы.
+                                Изучите основы UX/UI дизайна и пользовательского опыта.
+                                Узнайте, как прототипировать и тестировать интерфейсы.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Моушн-дизайн -->
+                    <div class="category-item color-cyan">
+                        <a href="/topic/motion-design">
+                            <h3>Моушн-дизайн <span class="item-count">8</span></h3>
+                            <p>Создание анимаций и динамических эффектов</p>
+                            <p class="additional-info">
+                                Научитесь создавать анимации для рекламы, презентаций и интерфейсов.
+                                Изучите программы After Effects, Premiere Pro и другие инструменты.
+                                Узнайте, как добавлять динамику в статичные макеты.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Дизайн-гигиена -->
+                    <div class="category-item color-brown">
+                        <a href="/topic/design-hygiene">
+                            <h3>Дизайн-гигиена <span class="item-count">7</span></h3>
+                            <p>Правила организации файлов и проектов</p>
+                            <p class="additional-info">
+                                Научитесь правильно организовывать файлы, слои и папки.
+                                Изучите стандарты сохранения макетов и экспорта файлов.
+                                Узнайте, как поддерживать порядок в рабочих процессах.
+                            </p>
+                        </a>
+                    </div>
+
+                    <!-- Инфопланирование -->
+                    <div class="category-item color-light-blue">
+                        <a href="/topic/infoplanning">
+                            <h3>Инфопланирование <span class="item-count">10</span></h3>
+                            <p>Расстановка акцентов в контенте</p>
+                            <p class="additional-info">
+                                Изучите методы расстановки приоритетов в информации.
+                                Узнайте, как выделять важное и структурировать данные.
+                                Научитесь создавать четкие и понятные сообщения.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tag-cloud" id="tags-panel" style="display: none;">
+
+
+
+        <a href="/tags/design" class="tag">Дизайн</a>
+        <a href="/tags/smm" class="tag">SMM</a>
+        <a href="/tags/branding" class="tag">Брендинг</a>
+        <a href="/tags/content" class="tag">Контент</a>
+        <a href="/tags/analytics" class="tag">Аналитика</a>
+        <a href="/tags/video" class="tag">Видео</a>
+        <a href="/tags/photography" class="tag">Фотография</a>
+        <a href="/tags/copywriting" class="tag">Копирайтинг</a>
+        <a href="/tags/email" class="tag">Email маркетинг</a>
+        <a href="/tags/web-design" class="tag">Веб-дизайн</a>
+        <a href="/tags/motion" class="tag">Моушн-дизайн</a>
+        <a href="/tags/hygiene" class="tag">Дизайн-гигиена</a>
+        <a href="/tags/infoplanning" class="tag">Инфопланирование</a>
+        <a href="/tags/marketing" class="tag">Маркетинг</a>
+        <a href="/tags/social-media" class="tag">Социальные сети</a>
+        <a href="/tags/advertising" class="tag">Реклама</a>
+        <a href="/tags/seo" class="tag">SEO</a>
+        <a href="/tags/strategy" class="tag">Стратегия</a>
+        <a href="/tags/ux-ui" class="tag">UX/UI</a>
+        <a href="/tags/typography" class="tag">Типографика</a>
+        <a href="/tags/color-theory" class="tag">Цветоведение</a>
+        <a href="/tags/composition" class="tag">Композиция</a>
+        <a href="/tags/storytelling" class="tag">Сторителлинг</a>
+        <a href="/tags/data-analysis" class="tag">Анализ данных</a>
+        <a href="/tags/video-editing" class="tag">Монтаж видео</a>
+        <a href="/tags/lighting" class="tag">Освещение</a>
+        <a href="/tags/sound" class="tag">Звук</a>
+        <a href="/tags/post-production" class="tag">Постпродакшн</a>
+        <a href="/tags/productivity" class="tag">Производительность</a>
+        <a href="/tags/tools" class="tag">Инструменты</a>
+        <a href="/tags/creativity" class="tag">Креативность</a>
+        <a href="/tags/trends" class="tag">Тренды</a>
+        <a href="/tags/inspiration" class="tag">Вдохновение</a>
+        <a href="/tags/education" class="tag">Обучение</a>
+        <a href="/tags/resources" class="tag">Ресурсы</a>
+        <a href="/tags/templates" class="tag">Шаблоны</a>
+        <a href="/tags/freebies" class="tag">Бесплатные материалы</a>
+
+    </div>
     <main>
         <section class="category-header">
             <h1>Название категории</h1>
-            <p>Описание категории, дороги в Эквадоре практически идеальные, хотя населенные пункты выглядят очень бедно. На дорогах много интересных машин, например очень много грузовиков - древних Фордов, которые я никогда раньше не видел. А еще несколько раз на глаза попадались старенькие Жигули :) А еще если кого-то обгоняешь и есть встречная машина, она обязательно включает фары. На больших машинах - грузовиках и автобусах, обязательно красуется местный тюнинг: машины разукрашенные, либо в наклейках, и обязательно везде огромное множество светодиодов, как будто новогодние елки едут и переливаются всеми цветами.</p>
+            <p>Описание категории, дороги в Эквадоре практически идеальные, хотя населенные пункты выглядят очень бедно.
+                На дорогах много интересных машин, например очень много грузовиков - древних Фордов, которые я никогда
+                раньше не видел. А еще несколько раз на глаза попадались старенькие Жигули :) А еще если кого-то
+                обгоняешь и есть встречная машина, она обязательно включает фары. На больших машинах - грузовиках и
+                автобусах, обязательно красуется местный тюнинг: машины разукрашенные, либо в наклейках, и обязательно
+                везде огромное множество светодиодов, как будто новогодние елки едут и переливаются всеми цветами.</p>
         </section>
         <section class="records-list">
             <!-- Запись 1 -->
@@ -43,7 +275,10 @@
             <!-- Запись 2 -->
             <div class="record-card">
                 <h2><a href="#">Запись 2: Основы веб-разработки</a></h2>
-                <p>Расширение коммерческое. Лицензия для одного сайта стоит в пределах двух тысяч рублей. При приобретении большего количества доменов предусмотрены скидки. Ключ покупается только раз. Хороший способ сэкономить – промокод (буквенно-цифровая комбинация), который позволяет воспользоваться скидкой.</p>
+                <p>Расширение коммерческое. Лицензия для одного сайта стоит в пределах двух тысяч рублей. При
+                    приобретении большего количества доменов предусмотрены скидки. Ключ покупается только раз. Хороший
+                    способ сэкономить – промокод (буквенно-цифровая комбинация), который позволяет воспользоваться
+                    скидкой.</p>
                 <div class="record-meta">
                     <span class="date">Дата: 05.01.2023</span>
                     <div class="tags-container">
@@ -74,43 +309,75 @@
                 <img src="https://i.pinimg.com/736x/0f/b8/0d/0fb80d36770a661f42d082220e6fcc2d.jpg" alt="Пример фото">
                 <p>Это пример записи с фотографией.</p>
                 <span class="date">Дата: 10.01.2023</span>
-                    <div class="tags-container">
-                        <span class="tags">
-                            <a href="#" class="tag">Базы данных</a>
-                            <a href="#" class="tag">SQL</a>
-                        </span>
-                    </div>
+                <div class="tags-container">
+                    <span class="tags">
+                        <a href="#" class="tag">Базы данных</a>
+                        <a href="#" class="tag">SQL</a>
+                    </span>
+                </div>
             </div>
-    
+
             <!-- Запись с видео -->
             <div class="record-card video-record">
                 <h2><a href="#">Запись с видео</a></h2>
-                
+
                 <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
                 <p>Это пример записи с видео:</p>
                 <span class="date">Дата: 10.01.2023</span>
-                    <div class="tags-container">
-                        <span class="tags">
-                            <a href="#" class="tag">Базы данных</a>
-                            <a href="#" class="tag">SQL</a>
-                        </span>
-                    </div>
+                <div class="tags-container">
+                    <span class="tags">
+                        <a href="#" class="tag">Базы данных</a>
+                        <a href="#" class="tag">SQL</a>
+                    </span>
+                </div>
             </div>
         </section>
         <script>
+            const colors = [
+                '#ff5722', // Оранжевый
+                '#03a9f4', // Голубой
+                '#4caf50', // Зеленый
+                '#9c27b0', // Фиолетовый
+                '#e91e63', // Розовый
+                '#ffc107', // Желтый
+                '#00bcd4', // Светло-голубой
+                '#673ab7', // Темно-фиолетовый
+                '#ff9800', // Ярко-оранжевый
+                '#009688'  // Бирюзовый
+            ];
+
+
+            const tags = document.querySelectorAll('.tag-cloud a');
+
+
+            tags.forEach(tag => {
+                tag.addEventListener('mouseenter', () => {
+                    const randomColor = colors[Math.floor(Math.random() * colors.length)];
+                    tag.style.backgroundColor = randomColor;
+                    tag.style.borderColor = 'transparent';
+                    tag.style.transform = 'scale(1.2)'; // Увеличиваем на 10%
+                });
+
+                // Возвращаем исходные стили при уходе курсора
+                tag.addEventListener('mouseleave', () => {
+                    tag.style.backgroundColor = 'transparent';
+                    tag.style.borderColor = '#333';
+                    tag.style.transform = 'scale(1)'; // Возвращаем к исходному размеру
+                });
+            });
+        </script>
+        <script>
+            // Функция для генерации случайного насыщенного цвета в формате HSL
+            function getRandomVibrantColor() {
+                const hue = Math.floor(Math.random() * 360); // Случайный оттенок
+                const saturation = Math.floor(Math.random() * 30) + 70; // Насыщенность от 70% до 100%
+                const lightness = Math.floor(Math.random() * 20) + 60; // Яркость от 60% до 80%
+                return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
+            }
+
+            // Добавляем обработчики событий для тегов
             document.addEventListener("DOMContentLoaded", function () {
-                // Функция для генерации случайного насыщенного цвета в формате HSL
-                function getRandomVibrantColor() {
-                    const hue = Math.floor(Math.random() * 360); // Случайный оттенок
-                    const saturation = Math.floor(Math.random() * 30) + 70; // Насыщенность от 70% до 100%
-                    const lightness = Math.floor(Math.random() * 20) + 60; // Яркость от 60% до 80%
-                    return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
-                }
-
-                // Получаем все элементы с классом "tag"
                 const tags = document.querySelectorAll('.tag');
-
-                // Добавляем обработчики событий для каждого тега
                 tags.forEach(tag => {
                     tag.addEventListener('mouseenter', () => {
                         tag.style.backgroundColor = getRandomVibrantColor();
@@ -122,6 +389,86 @@
                 });
             });
         </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Получаем элементы
+                const menuButton = document.getElementById('menu-button');
+                const categoriesPanel = document.getElementById('categories-panel');
+                const tagsButton = document.getElementById('tags-button');
+                const tagsPanel = document.querySelector('.tag-cloud');
+
+                let isProcessing = false; // Флаг для предотвращения повторных кликов
+
+                // Функция для закрытия всех открытых панелей
+                function closeAllPanels() {
+                    categoriesPanel.style.display = 'none'; // Закрываем панель категорий
+                    tagsPanel.style.display = 'none';      // Закрываем панель тегов
+                    menuButton.classList.remove('active'); // Убираем активное состояние кнопки "Категории"
+                    tagsButton.classList.remove('active'); // Убираем активное состояние кнопки "Теги"
+                }
+
+                // Обработчик для кнопки "Категории"
+                menuButton.addEventListener('click', () => {
+                    if (isProcessing) return; // Если уже выполняется действие, игнорируем клик
+                    isProcessing = true; // Блокируем обработку новых кликов
+
+                    if (categoriesPanel.style.display === 'block') {
+                        closeAllPanels(); // Если панель категорий уже открыта, закрываем её
+                    } else {
+                        closeAllPanels(); // Закрываем все панели
+                        categoriesPanel.style.display = 'block'; // Открываем панель категорий
+                        menuButton.classList.add('active');     // Добавляем активное состояние кнопке "Категории"
+                    }
+
+                    setTimeout(() => {
+                        isProcessing = false; // Разблокируем обработку кликов после завершения действия
+                    }, 300); // Задержка в 300мс (можно настроить)
+                });
+
+                // Обработчик для кнопки "Теги"
+                tagsButton.addEventListener('click', () => {
+                    if (isProcessing) return; // Если уже выполняется действие, игнорируем клик
+                    isProcessing = true; // Блокируем обработку новых кликов
+
+                    if (tagsPanel.style.display === 'block') {
+                        closeAllPanels(); // Если панель тегов уже открыта, закрываем её
+                    } else {
+                        closeAllPanels(); // Закрываем все панели
+                        tagsPanel.style.display = 'block';  // Открываем панель тегов
+                        tagsButton.classList.add('active'); // Добавляем активное состояние кнопке "Теги"
+                    }
+
+                    setTimeout(() => {
+                        isProcessing = false; // Разблокируем обработку кликов после завершения действия
+                    }, 300); // Задержка в 300мс (можно настроить)
+                });
+
+                // Закрытие панели категорий при клике вне её содержимого
+                document.addEventListener('click', (event) => {
+                    if (
+                        categoriesPanel.style.display === 'block' &&
+                        !categoriesPanel.contains(event.target) &&
+                        event.target !== menuButton
+                    ) {
+                        closeAllPanels();
+                    }
+                });
+
+                // Закрытие панели тегов при клике вне её содержимого
+                document.addEventListener('click', (event) => {
+                    if (
+                        tagsPanel.style.display === 'block' &&
+                        !tagsPanel.contains(event.target) &&
+                        event.target !== tagsButton
+                    ) {
+                        closeAllPanels();
+                    }
+                });
+            });
+
+        </script>
+
+
     </main>
 
     <!-- Подвал -->
