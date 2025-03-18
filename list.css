@@ -476,3 +476,16 @@ footer a:hover {
     background-color: transparent;
     white-space: nowrap;
 }
+/* Медиа-запрос для средних экранов */
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 колонки */
+    }
+}
+
+/* Медиа-запрос для маленьких экранов */
+@media (max-width: 768px) {
+    .categories-grid {
+        grid-template-columns: 1fr; /* 1 колонка */
+    }
+}
